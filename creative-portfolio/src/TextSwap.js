@@ -1,6 +1,5 @@
 import { gsap } from "gsap";
 
-function TextSwap(){
     // create a reusable effect that swaps text
 gsap.registerEffect({
     name: "swapText",
@@ -18,6 +17,6 @@ gsap.registerEffect({
 
 var tl = gsap.timeline({repeat: 0});
 tl.swapText(".subtext", {text: "THE SECOND INFO TEXT 1 IS THIS ONE", delay: 2})
-}
+
 
 export default TextSwap

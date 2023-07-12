@@ -1,5 +1,4 @@
 import './App.css'
-import TextSwap from './TextSwap'
 
 function App() {
 
@@ -80,7 +79,6 @@ function App() {
             
         </div>
 
-        <script src="./TextSwap.js"></script>
     </>
   )
 }
