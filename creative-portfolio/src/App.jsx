@@ -1,4 +1,5 @@
 import './App.css'
+import AnimText from './AnimText'
 
 function App() {
 
@@ -9,15 +10,16 @@ function App() {
                 <div className="columns">
 
                     <div className="col col-100">
-                        <span className="subtext">I am the product of my environment</span>
+                        <AnimText itemKey="id1" ogText='I am a developer' fadeOut={true}/>
+                        <AnimText itemKey="id2" ogText='Sabeet.me' timelineStart="10s" delayed={true} />
                     </div>
 
                     <div className="col col-50">
-                        <span>So let me show you,</span>
+                        <AnimText itemKey="3" ogText='So let me tell you' position='left'/>
                     </div>
 
                     <div className="col col-50">
-                        <span>what that means</span>
+                        <AnimText itemKey='4' ogText='what that means' position='right'/>
                     </div>
 
 
