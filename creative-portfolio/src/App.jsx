@@ -6,20 +6,19 @@ function App() {
   return (
     <>
         <div className='wrapper'>
-            <div className="section">
+
                 <div className="columns">
 
                     <div className="col col-100">
-                        <AnimText itemKey="id1" ogText='I am a developer' fadeOut={true}/>
-                        <AnimText itemKey="id2" ogText='Sabeet.me' timelineStart="10s" delayed={true} />
+                        I am the product of my environment
                     </div>
 
                     <div className="col col-50">
-                        <AnimText itemKey="3" ogText='So let me tell you' position='left'/>
+                        So let me show you,
                     </div>
 
                     <div className="col col-50">
-                        <AnimText itemKey='4' ogText='what that means' position='right'/>
+                        what that means
                     </div>
 
 
@@ -76,9 +75,7 @@ function App() {
                         Hit Me
                     </div>
                 </div>
-            </div>
-
-            
+                 
         </div>
 
     </>
