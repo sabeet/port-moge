@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./FlexR2.css";
 
 const FlexR2 = () => {
@@ -8,9 +9,9 @@ const FlexR2 = () => {
           <div className="image"></div>
 
           <div className="group">
-            <div className="item">About</div>
-            <div className="item">Contact</div>
-            <div className="item">Portfolio</div>
+            <div className="item"><Link to="/about">About</Link></div>
+            <div className="item"><Link to="/contact" >Contact</Link></div>
+            <div className="item"><Link to="/portfolio" >Portfolio</Link></div>
           </div>
         </div>
 

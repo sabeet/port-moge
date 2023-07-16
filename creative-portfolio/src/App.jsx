@@ -1,85 +1,22 @@
-import './App.css'
-import AnimText from './AnimText'
+import "./App.css";
+import About from "./About";
+import FlexR2 from "./FlexR2";
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
+
+// APP: This handles routing
 
 function App() {
-
   return (
     <>
-        <div className='wrapper'>
-
-                <div className="columns">
-
-                    <div className="col col-100">
-                        I am the product of my environment
-                    </div>
-
-                    <div className="col col-50">
-                        So let me show you,
-                    </div>
-
-                    <div className="col col-50">
-                        what that means
-                    </div>
-
-
-                    <div className="col col-33">
-                        <hr />
-                    </div>
-
-                    <div className="col col-33">
-                        <span>Experience</span>
-                    </div>
-
-
-                    <div className="col col-33">
-                        <hr />
-                    </div>
-
-                    <div className="col col-33">
-                        Capital One
-                    </div>
-
-                    <div className="col col-33">
-                        Ally Financial
-                    </div>
-
-                    <div className="col col-33">
-                        Workschool.co
-                    </div>
-
-                    <div className="col col-33">
-                        <hr />
-                    </div>
-
-                    <div className="col col-33">
-                        <span>Projects</span>
-                    </div>
-
-                    <div className="col col-33">
-                        <hr />
-                    </div>
-
-                    <div className="col col-25">
-                        Discord Bot                   
-                    </div>
-
-                    <div className="col col-25">
-                        QC Prof Stat
-                    </div>
-
-                    <div className="col col-25">
-                        Unity Ball Runner
-                    </div>
-
-                    <div className="col col-25">
-                        Hit Me
-                    </div>
-                </div>
-                 
-        </div>
-
+      
+        <Routes>
+          <Route exact path="/" element={<FlexR2 />} />
+          <Route path="/about" element={<About />} />
+          <Route exact path="*" element={<Navigate to="/" replace />} /> //replace replaces the URL
+        </Routes>
+     
     </>
-  )
+  );
 }
 
-export default App
+export default App;

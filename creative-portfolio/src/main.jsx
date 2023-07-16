@@ -1,14 +1,15 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import ScrollPage from './Scrollpage.jsx'
-import GridContainer from './GridContainer.jsx'
-import FlexR2 from './FlexR2.jsx'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     {/* <GridContainer /> */}
-    <FlexR2 />
-  </React.StrictMode>,
-)
+    {/* <FlexR2 /> */}
+    <Router>
+      <App />
+    </Router>
+  </React.StrictMode>
+);
