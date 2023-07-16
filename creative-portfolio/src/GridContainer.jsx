@@ -11,7 +11,9 @@ const GridContainer = () => {
                 </div>
                 <div className="div2">
                     <div className="side">
-                        <span>sabeet.me</span>
+                        <span>
+                            Sabeet.me
+                        </span>
                     </div>
                 </div>
                 <div className="div3">
