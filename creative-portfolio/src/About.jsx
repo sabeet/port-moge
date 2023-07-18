@@ -38,15 +38,14 @@ const About = () => {
 
           <div className="group-2">
             <div className="item-2">
-              {" "}
-              <Link to="/">Home</Link>{" "}
+              <Link to="/">Home</Link>
             </div>
             <div className="item-2">
-              {" "}
+              
               <Link to="/contact">Contact</Link>
             </div>
             <div className="item-2">
-              {" "}
+              
               <Link to="/portfolio">Portfolio</Link>
             </div>
           </div>
