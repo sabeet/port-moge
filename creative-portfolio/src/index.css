@@ -1,9 +1,41 @@
+* {
+  transition: all 0.3s ease;
+}
+
 body {
   font-size: 22px;
+  font-family: 'didot';
   line-height: 1.5;
   color: #ffffff;
   background-color: black;
   margin: 0;
   padding: 0;
-  
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
